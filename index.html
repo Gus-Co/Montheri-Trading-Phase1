@@ -1,0 +1,1156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montheri Trading - Mining, Commodity Trading & Geological Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2332 100%);
+            color: white;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #f7931e;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #f7931e;
+        }
+
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: white;
+            margin: 3px 0;
+            transition: 0.3s;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(15,20,25,0.9) 0%, rgba(26,35,50,0.85) 100%);
+            z-index: 1;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.8rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #f7931e;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #f7931e;
+            color: white;
+            padding: 15px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(247,147,30,0.3);
+            font-size: 1.1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(247,147,30,0.5);
+            background: #ff6b35;
+        }
+
+        /* Sections */
+        section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #1a2332;
+            position: relative;
+            font-weight: 700;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background: #f7931e;
+            margin: 1rem auto;
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background: #f8f9fa;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.9;
+        }
+
+        .about-text strong {
+            color: #f7931e;
+        }
+
+        .vision-mission {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .vm-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-left: 5px solid #f7931e;
+        }
+
+        .vm-card h3 {
+            color: #f7931e;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .value-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .value-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h3 {
+            color: #1a2332;
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        /* Divisions Section */
+        .divisions {
+            background: white;
+        }
+
+        .division {
+            margin-bottom: 5rem;
+        }
+
+        .division-header {
+            background: linear-gradient(135deg, #1a2332 0%, #2d3e50 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+        }
+
+        .division-header h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .division-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .capabilities-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .capabilities-list li {
+            padding: 0.8rem 0;
+            padding-left: 2rem;
+            position: relative;
+            line-height: 1.8;
+        }
+
+        .capabilities-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #f7931e;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .leadership-box {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #f7931e;
+        }
+
+        .leadership-box h4 {
+            color: #1a2332;
+            margin-bottom: 1rem;
+        }
+
+        .leader {
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .leader strong {
+            color: #1a2332;
+        }
+
+        .trading-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .category-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-top: 4px solid #f7931e;
+        }
+
+        .category-card h4 {
+            color: #1a2332;
+            margin-bottom: 1.5rem;
+            font-size: 1.3rem;
+        }
+
+        .commodity-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .commodity-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Projects Section */
+        .projects {
+            background: #f8f9fa;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            gap: 2rem;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-header {
+            background: linear-gradient(135deg, #f7931e, #ff6b35);
+            color: white;
+            padding: 1.5rem;
+        }
+
+        .project-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-content {
+            padding: 1.5rem;
+            line-height: 1.8;
+        }
+
+        /* Team Section */
+        .team {
+            background: white;
+        }
+
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .team-member {
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+            border-top: 4px solid #f7931e;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member h3 {
+            color: #1a2332;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .team-member .title {
+            color: #f7931e;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Regional Footprint */
+        .footprint {
+            background: linear-gradient(135deg, #1a2332 0%, #2d3e50 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .countries-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .country-item {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+
+        /* Contact Section */
+        .contact {
+            background: #f8f9fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            color: #f7931e;
+            font-size: 1.8rem;
+            min-width: 30px;
+        }
+
+        .contact-details h4 {
+            color: #1a2332;
+            margin-bottom: 0.5rem;
+        }
+
+        .map-placeholder {
+            background: #ddd;
+            height: 100%;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0f1419;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .hero-stats {
+                gap: 1.5rem;
+            }
+
+            .about-grid,
+            .vision-mission,
+            .division-content,
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .projects-grid,
+            .trading-categories {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Scroll animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">Montheri Trading</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#divisions">Divisions</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#team">Leadership</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1600" alt="Mining operations" class="hero-bg">
+        <div class="hero-content">
+            <h1>Montheri Trading (Pty) Ltd</h1>
+            <p>Leading African mining, commodity trading, and geological services company driving growth and empowerment across the continent's mineral and energy industries</p>
+            <a href="#contact" class="cta-button">Partner With Us</a>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Black Owned</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">Level 1</div>
+                    <div class="stat-label">BBBEE Status</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Countries</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2015</div>
+                    <div class="stat-label">Established</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title fade-in">About Montheri Trading</h2>
+            <p class="section-subtitle fade-in">Driving sustainable growth across Africa's resource sector</p>
+            
+            <div class="about-grid fade-in">
+                <div class="about-text">
+                    <p>Montheri Trading (Pty) Ltd is a <strong>100% black-owned</strong> South African company established in 2015, operating across the mining, commodity trading, and geological services sectors.</p>
+                    <br>
+                    <p>Our purpose is to drive growth and empowerment within Africa's mineral and energy industries through strategic partnerships, innovation, and operational excellence.</p>
+                    <br>
+                    <p>We are expanding into regional markets including <strong>Botswana, Zimbabwe, Zambia, Malawi, Gabon, and the DRC</strong>, with a vision to build Montheri Holdings as the parent company for our future divisions — including Energy and Fuel Commodities.</p>
+                    <br>
+                    <p><strong>Company Registration:</strong> 2015/443653/07</p>
+                    <p><strong>BBBEE Status:</strong> Level 1 (100% Black Owned and Managed)</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600" alt="Mining equipment" style="width: 100%; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+
+            <div class="vision-mission fade-in">
+                <div class="vm-card">
+                    <h3>Vision</h3>
+                    <p>To become a leading African holdings company with a strong footprint in sustainable mining, resource trading, and geological development.</p>
+                </div>
+                <div class="vm-card">
+                    <h3>Mission</h3>
+                    <p>To deliver transparent, reliable, and sustainable mineral and energy solutions that empower people, enhance economies, and protect the environment.</p>
+                </div>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 4rem; margin-bottom: 2rem; font-size: 2rem; color: #1a2332;" class="fade-in">Core Values</h3>
+            <div class="values-grid fade-in">
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h3>Integrity</h3>
+                    <p>We uphold transparency, honesty, and accountability in all our operations.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">⭐</div>
+                    <h3>Excellence</h3>
+                    <p>We deliver superior results with precision and professionalism.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Innovation</h3>
+                    <p>We apply technology and forward-thinking to every project.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3>Sustainability</h3>
+                    <p>We prioritize environmental preservation and community upliftment.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Empowerment</h3>
+                    <p>We invest in people from previously disadvantaged backgrounds to build the next generation of industry leaders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divisions Section -->
+    <section id="divisions" class="divisions">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Divisions</h2>
+            <p class="section-subtitle fade-in">Comprehensive solutions across mining, trading, and geological services</p>
+
+            <!-- Mining Division -->
+            <div class="division fade-in">
+                <div class="division-header">
+                    <h3>⛏️ Mining Division</h3>
+                    <p>The backbone of our operations, offering contract mining, mineral processing, and plant hire services</p>
+                </div>
+                <div class="division-content">
+                    <div>
+                        <h4 style="color: #1a2332; margin-bottom: 1rem;">Core Capabilities</h4>
+                        <ul class="capabilities-list">
+                            <li>Open-pit and underground mining</li>
+                            <li>Mine rehabilitation and site development</li>
+                            <li>Drilling, blasting, loading, and hauling</li>
+                            <li>Mineral processing and beneficiation</li>
+                            <li>Equipment leasing (excavators, dozers, graders, dump trucks, and water carts)</li>
+                        </ul>
+                        <h4 style="color: #1a2332; margin-top: 2rem; margin-bottom: 1rem;">Key Projects</h4>
+                        <ul class="capabilities-list">
+                            <li><strong>Black Chrome Mine (SAIL Group, Limpopo)</strong> – Sub-contract mining & heavy machinery leasing</li>
+                            <li><strong>Natal Portland Cement (KZN)</strong> – 10,000 tonnes/month contract mining</li>
+                            <li><strong>Annesley Andalusite Mine (Burgersfort)</strong> – Long-term dozer and plant hire services</li>
+                        </ul>
+                    </div>
+                    <div class="leadership-box">
+                        <h4>Mining Leadership</h4>
+                        <div class="leader"><strong>Elvis Ntsoane</strong><br>Head Engineer</div>
+                        <div class="leader"><strong>Philwa Kho</strong><br>Mining Operations</div>
+                        <div class="leader"><strong>M. MoesM</strong><br>Senior Operations Manager</div>
+                        <div class="leader"><strong>K.G.</strong><br>Technical Support</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Commodity Trading Division -->
+            <div class="division fade-in">
+                <div class="division-header">
+                    <h3>📊 Commodity Trading Division</h3>
+                    <p>Connecting African producers to global buyers in hard and energy commodities</p>
+                </div>
+                <div style="margin-top: 2rem;">
+                    <p style="margin-bottom: 2rem; font-size: 1.1rem;">We ensure quality assurance, logistical coordination, and secure transactions through rigorous CIS/KYC procedures and verified supplier networks.</p>
+                    
+                    <div class="trading-categories">
+                        <div class="category-card">
+                            <h4>Hard Commodities<br>(Metals & Minerals)</h4>
+                            <div class="commodity-item">Chrome & Ferrochrome</div>
+                            <div class="commodity-item">Copper Ore</div>
+                            <div class="commodity-item">Iron Ore</div>
+                            <div class="commodity-item">Manganese</div>
+                            <div class="commodity-item">Cobalt</div>
+                        </div>
+                        <div class="category-card">
+                            <h4>Energy & Fuel Commodities</h4>
+                            <div class="commodity-item">Crude Oil</div>
+                            <div class="commodity-item">Refined Fuels (Diesel, Petrol, Jet Fuel)</div>
+                            <div class="commodity-item">Thermal Coal</div>
+                            <div class="commodity-item">Lithium</div>
+                        </div>
+                        <div class="category-card">
+                            <h4>Precious Metals</h4>
+                            <div class="commodity-item">Gold</div>
+                            <div class="commodity-item">Platinum Group Metals (PGMs)</div>
+                            <div class="commodity-item">Tin</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;" class="leadership-box">
+                        <h4>Trading Leadership</h4>
+                        <div class="leader"><strong>Sheikh & M. Omar</strong> – Head of Trading</div>
+                        <div class="leader"><strong>Shaun</strong> – Strategy & Market Operations</div>
+                        <div class="leader"><strong>Jak Romp</strong> – Managing Director, Energy Division</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Geological Services Division -->
+            <div class="division fade-in">
+                <div class="division-header">
+                    <h3>🔬 Geological Services Division</h3>
+                    <p>Technical consulting, exploration, and reporting for mining projects across Africa</p>
+                </div>
+                <div class="division-content">
+                    <div>
+                        <h4 style="color: #1a2332; margin-bottom: 1rem;">Our Expertise Includes</h4>
+                        <ul class="capabilities-list">
+                            <li>Geological mapping and sampling</li>
+                            <li>Core logging and drilling supervision</li>
+                            <li>Mineral resource estimation</li>
+                            <li>Feasibility studies and reporting</li>
+                            <li>Mine planning and environmental studies</li>
+                        </ul>
+                    </div>
+                    <div class="leadership-box">
+                        <h4>Geology Leadership</h4>
+                        <div class="leader"><strong>Fabian</strong><br>Senior Geologist</div>
+                        <div class="leader"><strong>Mapeka J.</strong><br>Exploration Lead</div>
+                        <div class="leader"><strong>Nonto</strong><br>Data & GIS Specialist</div>
+                        <div class="leader"><strong>Singele</strong><br>Field Operations</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title fade-in">Key Projects</h2>
+            <p class="section-subtitle fade-in">Proven track record of excellence and reliability</p>
+            <div class="projects-grid fade-in">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SAIL Group - Black Chrome Mine</h3>
+                        <p>2018 - Present | Limpopo</p>
+                    </div>
+                    <div class="project-content">
+                        <p><strong>Scope:</strong> Sub-contract mining & heavy machinery leasing</p>
+                        <p><strong>Reserve:</strong> 20,000,000 tonnes with LG6A and LG6B chromite seams</p>
+                        <p><strong>Equipment:</strong> Two 90-tonne excavators, four 45-tonne dump trucks, one dozer (D6R), and an 18,000 litre water cart</p>
+                        <p style="margin-top: 1rem;">Fulfilled contract demands with minimal environmental impact and wildlife movement considerations.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Annesley Andalusite Mine</h3>
+                        <p>Recent | Burgersfort, Limpopo</p>
+                    </div>
+                    <div class="project-content">
+                        <p><strong>Scope:</strong> 1-year plant hire contract</p>
+                        <p><strong>Equipment:</strong> Cat D6R2 dozer</p>
+                        <p><strong>Output Support:</strong> 30,000 tonnes of Andalusite per month</p>
+                        <p style="margin-top: 1rem;">Maintaining commitment to source the best machinery, giving clients confidence to successfully reach their targets.</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Natal Portland Cement</h3>
+                        <p>2016-2019 | KwaZulu Natal</p>
+                    </div>
+                    <div class="project-content">
+                        <p><strong>Scope:</strong> Contract mining project</p>
+                        <p><strong>Output:</strong> 10,000 tonnes of de-dolomitised limestone monthly</p>
+                        <p><strong>Contractor:</strong> Worked alongside Unitrans (main contractor)</p>
+                        <p style="margin-top: 1rem;">Our first project - successfully extracted metamorphic rock while navigating challenges of fault lines and formation imperfections.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title fade-in">Leadership & Governance</h2>
+            <p class="section-subtitle fade-in">Experienced board driving strategic growth and operational excellence</p>
+            <div class="board-grid fade-in">
+                <div class="team-member">
+                    <h3>Sello Maripane</h3>
+                    <div class="title">Chief Executive Officer</div>
+                    <p>Strategic leadership and overall company direction</p>
+                </div>
+                <div class="team-member">
+                    <h3>Shaun Thobejane</h3>
+                    <div class="title">Director: Strategy & Partnerships</div>
+                    <p>Market operations and strategic partnerships</p>
+                </div>
+                <div class="team-member">
+                    <h3>KB & Songeze</h3>
+                    <div class="title">Holdings & Administration</div>
+                    <p>Corporate governance and administrative oversight</p>
+                </div>
+                <div class="team-member">
+                    <h3>Elvis Ntsoane</h3>
+                    <div class="title">Head Engineer</div>
+                    <p>Pr Eng, Mech - Technical engineering leadership</p>
+                </div>
+                <div class="team-member">
+                    <h3>Philwa Kho</h3>
+                    <div class="title">Mining Operations</div>
+                    <p>Day-to-day mining operations management</p>
+                </div>
+                <div class="team-member">
+                    <h3>Jak Romp</h3>
+                    <div class="title">Managing Director: Energy</div>
+                    <p>Energy division leadership and expansion</p>
+                </div>
+                <div class="team-member">
+                    <h3>Sheikh & M. Omar</h3>
+                    <div class="title">Commodity Trading</div>
+                    <p>Trading operations and market development</p>
+                </div>
+                <div class="team-member">
+                    <h3>Fabian</h3>
+                    <div class="title">Senior Geologist</div>
+                    <p>Geological services and exploration</p>
+                </div>
+                <div class="team-member">
+                    <h3>Mapeka J.</h3>
+                    <div class="title">Exploration Lead</div>
+                    <p>Resource exploration and assessment</p>
+                </div>
+                <div class="team-member">
+                    <h3>Nonto</h3>
+                    <div class="title">Data & GIS Specialist</div>
+                    <p>Geological data analysis and mapping</p>
+                </div>
+                <div class="team-member">
+                    <h3>Singele</h3>
+                    <div class="title">Field Operations</div>
+                    <p>On-site geological field operations</p>
+                </div>
+                <div class="team-member">
+                    <h3>M. MoesM & K.G.</h3>
+                    <div class="title">Operations & Projects</div>
+                    <p>Project management and operations support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Regional Footprint -->
+    <section class="footprint">
+        <div class="container">
+            <h2 class="section-title fade-in" style="color: white;">Regional Footprint</h2>
+            <p class="section-subtitle fade-in" style="color: #ccc;">Operating across Southern and Central Africa</p>
+            <p style="font-size: 1.2rem; margin-bottom: 2rem;">Our logistics and partnerships enable both FOB and DAP supply capabilities from mine to port.</p>
+            <div class="countries-list fade-in">
+                <div class="country-item">🇿🇦 South Africa</div>
+                <div class="country-item">🇧🇼 Botswana</div>
+                <div class="country-item">🇿🇼 Zimbabwe</div>
+                <div class="country-item">🇿🇲 Zambia</div>
+                <div class="country-item">🇲🇼 Malawi</div>
+                <div class="country-item">🇬🇦 Gabon</div>
+                <div class="country-item">🇨🇩 DRC</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Section -->
+    <section style="background: white; padding: 60px 0;">
+        <div class="container">
+            <h2 class="section-title fade-in">Compliance & Safety</h2>
+            <p class="section-subtitle fade-in">Committed to the highest standards of safety and environmental responsibility</p>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem;" class="fade-in">
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #f7931e;">
+                    <h3 style="color: #1a2332; margin-bottom: 1rem;">SHEQ Standards</h3>
+                    <ul class="capabilities-list">
+                        <li>All personnel undergo regular health, safety, and machine-operator certifications</li>
+                        <li>ISO-aligned operational systems with continuous training</li>
+                        <li>Internal audits and compliance monitoring</li>
+                        <li>Environmental impact minimization protocols</li>
+                    </ul>
+                </div>
+                <div style="background: #f8f9fa; padding: 2rem; border-radius: 15px; border-left: 5px solid #f7931e;">
+                    <h3 style="color: #1a2332; margin-bottom: 1rem;">BBBEE Commitment</h3>
+                    <ul class="capabilities-list">
+                        <li><strong>Level 1 BBBEE Company</strong></li>
+                        <li>100% Black Owned and Managed</li>
+                        <li>Priority given to black suppliers</li>
+                        <li>Focus on empowering previously disadvantaged individuals</li>
+                        <li>Community upliftment initiatives</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title fade-in">Contact Us</h2>
+            <p class="section-subtitle fade-in">Let's discuss how we can partner for success</p>
+            <div class="contact-grid fade-in">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@montheri.com</p>
+                            <p>sello.maripane@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+27 83 331 7848</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h4>Website</h4>
+                            <p>www.montheri.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Physical Address</h4>
+                            <p>336KT Grootboom Farm<br>
+                            R555 Road, Steelpoort<br>
+                            Limpopo, 1133<br>
+                            South Africa</p>
+                        </div>
+                    </div>
+                    <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 10px; border-left: 4px solid #f7931e;">
+                        <h4 style="color: #1a2332; margin-bottom: 0.5rem;">Company Registration</h4>
+                        <p style="color: #666;">2015/443653/07</p>
+                        <h4 style="color: #1a2332; margin-top: 1rem; margin-bottom: 0.5rem;">BBBEE Status</h4>
+                        <p style="color: #666;">Level 1 (100% Black Owned)</p>
+                    </div>
+                </div>
+                <div class="map-placeholder">
+                    <div style="text-align: center; padding: 2rem;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">📍</div>
+                        <p style="font-size: 1.2rem; color: #1a2332;"><strong>Steelpoort, Limpopo</strong></p>
+                        <p style="margin-top: 1rem;">Strategic location for mining operations<br>across Southern Africa</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p style="font-size: 1.1rem; margin-bottom: 1rem;"><strong>Montheri Trading (Pty) Ltd</strong></p>
+            <p>Company Registration: 2015/443653/07 | Level 1 BBBEE Company (100% Black Owned)</p>
+            <p style="margin-top: 1rem;">&copy; 2024 Montheri Trading. All rights reserved.</p>
+            <p style="margin-top: 1rem; color: #999;">Mining | Commodity Trading | Geological Services</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mobile menu toggle
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.display = 'none';
+            } else {
+                navLinks.style.display = 'flex';
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.right = '0';
+                navLinks.style.background = '#1a2332';
+                navLinks.style.padding = '1rem';
+                navLinks.style.gap = '1rem';
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (window.innerWidth <= 768) {
+                    navLinks.style.display = 'none';
+                }
+            });
+        });
+
+        // Header background change on scroll
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                header.style.padding = '0.5rem 0';
+                header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.4)';
+            } else {
+                header.style.padding = '1rem 0';
+                header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.3)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Counter animation for stats
+        const animateCounter = (element, target, duration = 2000) => {
+            let start = 0;
+            const increment = target / (duration / 16);
+            const timer = setInterval(() => {
+                start += increment;
+                if (start >= target) {
+                    element.textContent = target;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(start);
+                }
+            }, 16);
+        };
+
+        // Trigger counter animation when hero is visible
+        const heroObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = document.querySelectorAll('.stat-number');
+                    counters.forEach(counter => {
+                        const text = counter.textContent;
+                        if (text.includes('+')) {
+                            const num = parseInt(text.replace('+', ''));
+                            counter.textContent = '0+';
+                            animateCounter(counter, num, 1500);
+                            counter.textContent = num + '+';
+                        }
+                    });
+                    heroObserver.disconnect();
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const hero = document.querySelector('.hero');
+        if (hero) heroObserver.observe(hero);
+    </script>
+</body>
+</html>
