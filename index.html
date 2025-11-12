@@ -1,62 +1,859 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Montheri Trading — Home</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montheri Trading | Mining Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="brand">Montheri Trading</h1>
-      <nav class="main-nav">
-        <ul>
-          <li><a href="index.html" data-page="home" class="nav-link active">Home</a></li>
-          <li><a href="about.html" data-page="about" class="nav-link">About</a></li>
-          <li><a href="services.html" data-page="services" class="nav-link">Services</a></li>
-          <li><a href="compliance.html" data-page="compliance" class="nav-link">Compliance</a></li>
-          <li><a href="strategy.html" data-page="strategy" class="nav-link">Strategy</a></li>
-          <li><a href="personnel.html" data-page="personnel" class="nav-link">Personnel</a></li>
-          <li><a href="projects.html" data-page="projects" class="nav-link">Projects</a></li>
-          <li><a href="contact.html" data-page="contact" class="nav-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <div class="bg-animation"></div>
 
-  <main class="container">
-    <section class="hero">
-      <h2>Multi-division mining, commodity trading and geological services across Africa</h2>
-      <p class="lead">Montheri Trading combines operational mining expertise, an established commodities trading desk and in-house geological services to provide integrated solutions across the continent.</p>
-    </section>
+    <header>
+        <nav>
+            <div class="logo">MONTHERI <span>TRADING</span></div>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="mobile-menu">
+                <li><a href="#" data-page="home" class="nav-link active">Home</a></li>
+                <li><a href="#" data-page="about" class="nav-link">About</a></li>
+                <li><a href="#" data-page="services" class="nav-link">Services</a></li>
+                <li><a href="#" data-page="compliance" class="nav-link">Compliance</a></li>
+                <li><a href="#" data-page="strategy" class="nav-link">Strategy</a></li>
+                <li><a href="#" data-page="personnel" class="nav-link">Personnel</a></li>
+                <li><a href="#" data-page="projects" class="nav-link">Projects</a></li>
+                <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="overview">
-      <h3>What we do</h3>
-      <p>We develop and operate mining projects, source and trade bulk commodities, and deliver geological consulting and exploration services. Our vertical integration — from exploration through logistics and trading — allows us to optimize value capture while maintaining rigorous environmental, social and governance standards.</p>
+    <main>
+        <!-- HOME PAGE -->
+        <div id="home" class="page-content active">
+            <div class="hero">
+                <h1>Moving the Mining Industry Forward</h1>
+                <p>100% Black Owned | Level 1 BBBEE | Contract Mining Excellence</p>
+                <a href="#" class="cta-button" data-page="contact">Get Started</a>
+            </div>
 
-      <div class="quick-links">
-        <a class="card" href="services.html">Our Services</a>
-        <a class="card" href="projects.html">Active Projects</a>
-        <a class="card" href="contact.html">Get in Touch</a>
-      </div>
-    </section>
+            <div class="glass-container">
+                <h2 class="section-title">Welcome to Montheri Trading</h2>
+                <p style="font-size: 1.2rem; text-align: center; max-width: 900px; margin: 0 auto;">
+                    Montheri Trading (Pty) Ltd is a 100% Black Owned Company with interests in Mining, Mineral Processing and Commodity Trading. Our company is focused on offering sustainable solutions to maximise our growth potential in sectors in which previously disadvantaged companies were not empowered to excel in.
+                </p>
+            </div>
 
-    <section class="highlights">
-      <h3>Key strengths</h3>
-      <ul>
-        <li>Operational experience across West, Central and Southern Africa</li>
-        <li>Integrated commodity trading desk with logistics capacity</li>
-        <li>Qualified geological team and exploration capability</li>
-        <li>Strong local partnerships and community engagement</li>
-      </ul>
-    </section>
-  </main>
+            <div class="quote-box">
+                "We take pride in being participants in a sector that really moves the country forward."
+            </div>
 
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; Montheri Trading. Professional mining & commodity trading solutions across Africa.</p>
-    </div>
-  </footer>
+            <div class="glass-container">
+                <div class="grid-4">
+                    <div class="stat-box">
+                        <span class="number">100%</span>
+                        <span class="label">Black Owned</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">Level 1</span>
+                        <span class="label">BBBEE Status</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">100+</span>
+                        <span class="label">Years Combined Experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">7</span>
+                        <span class="label">Countries Serviced</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <div class="glass-card">
+                    <h3>Excellence</h3>
+                    <p>Whether we are spearheading new shafts in Driekop, carrying bulk commodities from one place to the next or rehabilitating a closing mine, we do our best to be there in every step of our clients' journey into prosperity.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>Integrity</h3>
+                    <p>Apart from the promises we make to our clients we have a greater promise to the community at large as a business. This is a promise to always do business with honesty and the preservation of what will remain long after.</p>
+                </div>
+                <div class="glass-card">
+                    <h3>Planning</h3>
+                    <p>We place a high priority on getting it right the first time. We serve clients who work in industries where there is little room for mistake and adequate planning has allowed us to do our work with confidence.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ABOUT PAGE -->
+        <div id="about" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">About Montheri Trading</h2>
+                
+                <h3 class="section-subtitle">Our Story</h3>
+                <p>The story of Montheri Trading began in 2015 when it was registered with CIPC. It is no surprise that those years have been used optimally to surpass expectations and still aim higher with the passing of every milestone.</p>
+                
+                <p style="margin-top: 1rem;">Montheri Trading has, for the past 5 years, utilised over 100 years of industry experience by bringing in notable industry pacesetters to partner up and provide end-to-end solutions to challenges facing the customer.</p>
+
+                <h3 class="section-subtitle">Our Directors' Expertise</h3>
+                <p>Our Directors have a string of successful projects under their belts in the industries we operate in and it is this wealth of knowledge that we tap into to not only see where we are going but also forecast where we need to position ourselves for maximum ascendancy for the benefit of our clients, employees and the industry we serve in.</p>
+
+                <h3 class="section-subtitle">Our Business Focus</h3>
+                <p>Our interests in commodity trading put us right in the front line of extracting commodities, moving goods and ensuring productivity in mining and road transportation. This is a business that introduces us to the vast opportunities that exist in these economy-bench-marking activities.</p>
+
+                <p style="margin-top: 1rem;">We offer an extensive range of commodities and continuously invest in new machinery that is befitting of the broadness of our reach.</p>
+
+                <h3 class="section-subtitle">Our Reach</h3>
+                <p>We can service clients in South Africa, Botswana, Lesotho, Zimbabwe, Mozambique, Namibia and Swaziland. Through our network of industry-based relationships we are also able to take on projects in most parts of the continent. Our reach is limited only by the depth of our relationships and we take great pride in having strong ties with reputable companies, individuals and government entities.</p>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Vision & Mission</h3>
+                <div class="grid-2">
+                    <div>
+                        <h4 style="color: var(--primary-red); margin-bottom: 1rem;">Our Vision</h4>
+                        <p>We see ourselves becoming a holdings company with a controlling stake in sustainable mining projects in Africa.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-red); margin-bottom: 1rem;">Our Mission</h4>
+                        <p>To achieve that we will constantly and consistently build our employees to be people of high impact in the industry.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Our Core Values</h3>
+                <div class="grid-3">
+                    <div class="glass-card">
+                        <div class="service-icon">★</div>
+                        <h3>Excellence</h3>
+                        <p>Whether we are spearheading new shafts in Driekop, carrying bulk commodities from one place to the next or rehabilitating a closing mine, we do our best to be there in every step of our clients' journey into prosperity.</p>
+                        <p style="margin-top: 1rem;">The work we have completed these past five years is a great reference of our capabilities to deliver well every time. Our plan for the next five years is to build on that positive momentum for our prosperity. Is there any other way to do business? At Montheri Trading we don't think so.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="service-icon">⚖</div>
+                        <h3>Integrity</h3>
+                        <p>Apart from the promises we make to our clients we have a greater promise to the community at large as a business. This is a promise to always do business with honesty and the preservation of what will remain long after the last seeds we have planted have matured and the last piece of precious mineral dug out from the ground - that is human life.</p>
+                        <p style="margin-top: 1rem;">The communities we work with, the people we empower and the environment we have to preserve. As Montheri Trading we are always looking at new ways to minimise our footprint on human life and the surroundings we rely on to thrive.</p>
+                    </div>
+                    <div class="glass-card">
+                        <div class="service-icon">📋</div>
+                        <h3>Planning</h3>
+                        <p>We place a high priority on getting it right the first time. We serve clients who work in industries where there is little room for mistake and adequate planning has allowed us to do our work with the confidence that we are never the weakest link in their operations.</p>
+                        <p style="margin-top: 1rem;">Planning is not a discipline of ideals and best case scenarios but an anticipation of every little detail of the things we can control and those we cannot.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SERVICES PAGE -->
+        <div id="services" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">Our Services</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">We have built a working system that adds value to our clients</p>
+
+                <h3 class="section-subtitle">Service Overview</h3>
+                <p>Our service offering is tailored to meet at the axis of where we can provide value and what our clients need us to be. Our core business is Plant Hire and Contract Mining where we have a fleet of heavy duty trucks, excavators, loaders and graders to meet our obligations.</p>
+
+                <div class="grid-2" style="margin-top: 3rem;">
+                    <div class="glass-card">
+                        <div class="service-icon">⛏️</div>
+                        <h3>Contract Mining</h3>
+                        <p>According to StatsSA, the mining industry contributes R8 for every R100 produced by the national economy and employs one in every 40 working individuals.</p>
+                        <p style="margin-top: 1rem;">At Montheri Trading we have the equipment, people and experience to turn any mining operation into a full turnkey production. We carry the same discipline in our contract mining endeavours that we apply across all our services.</p>
+                        <p style="margin-top: 1rem;"><strong>What We Deliver:</strong></p>
+                        <ul class="styled-list" style="margin-top: 0.5rem;">
+                            <li>Complete turnkey mining operations</li>
+                            <li>Fleet of heavy duty equipment</li>
+                            <li>Experienced operators and management</li>
+                            <li>Full project planning and execution</li>
+                            <li>Safety and compliance management</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">🏭</div>
+                        <h3>Mineral Processing</h3>
+                        <p>Our mineral processing capabilities allow us to add value to extracted materials and ensure optimal quality for our clients.</p>
+                        <p style="margin-top: 1rem;"><strong>Processing Services:</strong></p>
+                        <ul class="styled-list">
+                            <li>De-dolomitised limestone processing</li>
+                            <li>Chromite ore processing</li>
+                            <li>Andalusite mineral processing</li>
+                            <li>Quality control and testing</li>
+                            <li>Custom processing solutions</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">📦</div>
+                        <h3>Commodity Trading</h3>
+                        <p>Our interests in commodity trading put us right in the front line of extracting commodities, moving goods and ensuring productivity in mining and road transportation.</p>
+                        <p style="margin-top: 1rem;"><strong>Commodities We Handle:</strong></p>
+                        <ul class="styled-list">
+                            <li>Chrome ore and concentrates</li>
+                            <li>Limestone and derivatives</li>
+                            <li>Andalusite minerals</li>
+                            <li>Various industrial minerals</li>
+                            <li>Bulk commodity logistics</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">🚜</div>
+                        <h3>Plant Hire</h3>
+                        <p>We offer an extensive fleet of heavy-duty equipment available for lease with trained, certified operators.</p>
+                        <p style="margin-top: 1rem;"><strong>Equipment Available:</strong></p>
+                        <ul class="styled-list">
+                            <li>Excavators (90-tonne capacity)</li>
+                            <li>Dump Trucks (45-tonne capacity)</li>
+                            <li>Dozers (Cat D6R and D6R2)</li>
+                            <li>Water Carts (18,000 litre)</li>
+                            <li>Loaders and Graders</li>
+                            <li>Full maintenance support</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">🚚</div>
+                        <h3>Transportation</h3>
+                        <p>Our interests in Transportation are founded on our commitment to assist our clients in securing trucks either for ownership or leasing. We use our buying power to activate deals on behalf of our clients and see to it that they have the equipment to drive their deals forward.</p>
+                        <p style="margin-top: 1rem;"><strong>Transportation Solutions:</strong></p>
+                        <ul class="styled-list">
+                            <li>Cross-border commodity transport</li>
+                            <li>Bulk material hauling</li>
+                            <li>Equipment procurement assistance</li>
+                            <li>Truck leasing arrangements</li>
+                            <li>Logistics planning and execution</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">🔧</div>
+                        <h3>Equipment Procurement</h3>
+                        <p>Montheri Trading sources the best of the best in staff and equipment. It is evident in our track record that this approach has never failed us or our clients.</p>
+                        <p style="margin-top: 1rem;"><strong>Procurement Services:</strong></p>
+                        <ul class="styled-list">
+                            <li>Heavy machinery sourcing</li>
+                            <li>Competitive pricing through buying power</li>
+                            <li>Lease-to-own arrangements</li>
+                            <li>Equipment quality verification</li>
+                            <li>Ongoing technical support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="quote-box" style="margin-top: 3rem;">
+                    "Montheri Trading sources the best of the best in staff and equipment. It is evident in our track record that this approach has never failed us or our clients."
+                </div>
+            </div>
+        </div>
+
+        <!-- COMPLIANCE PAGE -->
+        <div id="compliance" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">Compliance & Standards</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">Our strong compliance is proof of our commitment to working towards achieving the ideals of our industry's best practices to protect and develop our employees, sub-contractors and the community.</p>
+
+                <h3 class="section-subtitle">SHEQ (Safety, Health, Environment & Quality)</h3>
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h3>Operator Training & Certification</h3>
+                        <ul class="styled-list">
+                            <li>All our operators are trained on the specific machines they will be working on</li>
+                            <li>Our operators undergo annual training and fitness tests</li>
+                            <li>Continuous professional development programs</li>
+                            <li>Regular competency assessments</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Environmental Compliance</h3>
+                        <ul class="styled-list">
+                            <li>Our operators are ISO 18001 certified to protect our staff and the environment in their operations with oil and other hazardous materials</li>
+                            <li>Strict adherence to environmental regulations</li>
+                            <li>Waste management protocols</li>
+                            <li>Environmental impact minimization strategies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="glass-card" style="margin-top: 2rem;">
+                    <h3>Quality Management Systems</h3>
+                    <ul class="styled-list">
+                        <li>Achieve ISO 9001 certification by measurement of our system via internal audits</li>
+                        <li>Continuous improvement processes</li>
+                        <li>Regular internal and external audits</li>
+                        <li>Performance metrics tracking</li>
+                        <li>Client satisfaction monitoring</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">BBBEE Commitment</h3>
+                <div class="grid-2">
+                    <div>
+                        <h4 style="color: var(--primary-red); margin-bottom: 1rem;">Our Status</h4>
+                        <p>Montheri Trading (Pty) Ltd is a Level 1 BBBEE Company. Our ownership structure is 100% black and we empower black suppliers by giving them priority where it is possible to do so. Our company director is from previously disadvantaged background.</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--primary-red); margin-bottom: 1rem;">Empowerment Focus</h4>
+                        <ul class="styled-list">
+                            <li>100% Black Ownership</li>
+                            <li>Level 1 BBBEE Status</li>
+                            <li>Preferential procurement from black suppliers</li>
+                            <li>Skills development programs</li>
+                            <li>Employment equity initiatives</li>
+                            <li>Enterprise and supplier development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Company Objectives</h3>
+                <p style="font-size: 1.1rem;">Providing affordable, accessible and sustainable service to our clients while improving the quality of our employee participation, especially those from Previously Disadvantaged Backgrounds.</p>
+
+                <div class="grid-3" style="margin-top: 2rem;">
+                    <div class="glass-card">
+                        <h3>Affordability</h3>
+                        <p>Leveraging our buying power and operational efficiency to provide competitive pricing without compromising quality.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Accessibility</h3>
+                        <p>Making our services available across Southern Africa through strategic partnerships and regional presence.</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Sustainability</h3>
+                        <p>Building long-term value for clients, employees, and communities through responsible business practices.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Company Registration</h3>
+                <div class="stat-box">
+                    <span class="label" style="font-size: 1.1rem;">Company Registration Number</span>
+                    <span class="number" style="font-size: 2rem;">2015/443653/07</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- STRATEGY PAGE -->
+        <div id="strategy" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">Our Marketing Strategy</h2>
+                
+                <h3 class="section-subtitle">Strategic Approach</h3>
+                <p>Our clients are mining companies, construction companies, trucking companies and companies that trade in low value and high value commodities. We work on reputation more than anything. The reputation of Montheri Trading as a company, the reliability of our machines and the careful planning of our processes. We do not market ourselves conventionally since we target key decision makers of the companies and entities we aim to do business with.</p>
+
+                <p style="margin-top: 1rem;">We have worked on a marketing approach based on relationship building and networking instead of conventional "cast the net wide" marketing practices. The benefit of this is cost reduction and targeted spending.</p>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Marketing Channels</h3>
+                <div class="grid-3">
+                    <div class="glass-card">
+                        <div class="service-icon">📱</div>
+                        <h3>Social Media</h3>
+                        <p><strong>Focus: LinkedIn</strong></p>
+                        <p style="margin-top: 1rem;">With decision makers and the general public spending more and more time on social media to interact with industry peers we have identified LinkedIn as a valuable tool to build relationships with these decision makers.</p>
+                        <p style="margin-top: 1rem;"><strong>Strategy:</strong></p>
+                        <ul class="styled-list">
+                            <li>Targeted B2B networking</li>
+                            <li>Industry thought leadership</li>
+                            <li>Project showcase and updates</li>
+                            <li>Professional relationship building</li>
+                            <li>Direct engagement with decision makers</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">💬</div>
+                        <h3>Word-of-Mouth</h3>
+                        <p><strong>Leveraging Our Track Record</strong></p>
+                        <p style="margin-top: 1rem;">Our past projects have allowed us to have a fair advantage with entities that will speak of our work and reliability. We have built good references and we will rely on this to be a stepping stone to getting new projects.</p>
+                        <p style="margin-top: 1rem;"><strong>Approach:</strong></p>
+                        <ul class="styled-list">
+                            <li>Client testimonials and referrals</li>
+                            <li>Strong performance track record</li>
+                            <li>Industry reputation management</li>
+                            <li>Relationship-based growth</li>
+                            <li>Quality-driven referrals</li>
+                        </ul>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="service-icon">📰</div>
+                        <h3>Article Marketing</h3>
+                        <p><strong>Content Leadership</strong></p>
+                        <p style="margin-top: 1rem;">With our website we have a platform to build credibility to industry peers by being a hub of information and insight into where the industry is and where it is going.</p>
+                        <p style="margin-top: 1rem;"><strong>Content Strategy:</strong></p>
+                        <ul class="styled-list">
+                            <li>Industry insights and analysis</li>
+                            <li>Technical expertise sharing</li>
+                            <li>Market trends and forecasts</li>
+                            <li>Best practices documentation</li>
+                            <li>Thought leadership positioning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Target Market</h3>
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h3>Primary Clients</h3>
+                        <ul class="styled-list">
+                            <li>Mining Companies</li>
+                            <li>Construction Companies</li>
+                            <li>Trucking Companies</li>
+                            <li>Commodity Trading Companies</li>
+                            <li>Government Mining Entities</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Geographic Focus</h3>
+                        <ul class="styled-list">
+                            <li>South Africa (Primary)</li>
+                            <li>Botswana</li>
+                            <li>Lesotho</li>
+                            <li>Zimbabwe</li>
+                            <li>Mozambique</li>
+                            <li>Namibia</li>
+                            <li>Swaziland</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quote-box">
+                "We work on reputation more than anything. The reputation of Montheri Trading as a company, the reliability of our machines and the careful planning of our processes."
+            </div>
+        </div>
+
+        <!-- PERSONNEL PAGE -->
+        <div id="personnel" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">Our Leadership Team</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">Experienced professionals driving mining excellence across Africa</p>
+
+                <div class="grid-2">
+                    <div class="glass-card team-card">
+                        <div class="service-icon">👤</div>
+                        <h3>Mr. Sello Maripane</h3>
+                        <p class="role">Managing Director</p>
+                        <p class="role" style="color: white;">MD Operations</p>
+                        <p class="credentials">NDip, Mech, CMRP, SAAMA, PDP, PM</p>
+                        <p style="margin-top: 1rem;">Leading operational excellence and strategic direction for Montheri Trading with extensive mechanical engineering expertise and project management credentials.</p>
+                    </div>
+
+                    <div class="glass-card team-card">
+                        <div class="service-icon">👤</div>
+                        <h3>Mr. Elvis Ntsoane</h3>
+                        <p class="role">Head Engineer</p>
+                        <p class="credentials">Pr Eng, Mech</p>
+                        <p style="margin-top: 1rem;">Professional Engineer with responsibility for all technical aspects of operations, ensuring engineering excellence and compliance across all projects.</p>
+                    </div>
+
+                    <div class="glass-card team-card">
+                        <div class="service-icon">👤</div>
+                        <h3>Mr. Jeffrey Makoloane</h3>
+                        <p class="role">Finance & Marketing Director</p>
+                        <p class="credentials">BComm Acc, CA Can</p>
+                        <p style="margin-top: 1rem;">Chartered Accountant overseeing financial strategy, marketing initiatives, and business development for sustainable growth.</p>
+                    </div>
+
+                    <div class="glass-card team-card">
+                        <div class="service-icon">👤</div>
+                        <h3>Paschal Masha</h3>
+                        <p class="role">Technical Manager</p>
+                        <p class="credentials">BTech, Mech</p>
+                        <p style="margin-top: 1rem;">Managing technical operations and equipment maintenance, ensuring optimal performance of all machinery and equipment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Combined Expertise</h3>
+                <p>Our leadership team brings together over 100 years of combined industry experience, spanning mechanical engineering, mining operations, financial management, and strategic planning. This wealth of knowledge allows us to:</p>
+                
+                <div class="grid-3" style="margin-top: 2rem;">
+                    <div class="glass-card">
+                        <h3>Forecast Industry Trends</h3>
+                        <p>Position ourselves strategically for maximum growth and client benefit</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Execute Complex Projects</h3>
+                        <p>Deliver on challenging mining and processing operations with proven expertise</p>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Build Industry Relationships</h3>
+                        <p>Maintain strong ties with reputable companies and government entities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Organizational Structure</h3>
+                <div style="background: var(--glass-bg); backdrop-filter: blur(10px); border-radius: 15px; padding: 3rem; text-align: center;">
+                    <div style="margin-bottom: 3rem;">
+                        <div style="background: var(--primary-red); display: inline-block; padding: 1.5rem 3rem; border-radius: 10px; font-weight: bold; color: white;">
+                            Mr. Sello Maripane<br>
+                            <small style="font-weight: normal;">Managing Director</small>
+                        </div>
+                    </div>
+                    
+                    <div class="grid-3" style="max-width: 900px; margin: 0 auto;">
+                        <div style="background: rgba(227, 30, 36, 0.3); padding: 1.5rem; border-radius: 10px; border: 2px solid var(--primary-red);">
+                            <strong>Mr. Elvis Ntsoane</strong><br>
+                            <small>Head Engineer</small>
+                        </div>
+                        <div style="background: rgba(227, 30, 36, 0.3); padding: 1.5rem; border-radius: 10px; border: 2px solid var(--primary-red);">
+                            <strong>Mr. Jeffrey Makoloane</strong><br>
+                            <small>Finance & Marketing</small>
+                        </div>
+                        <div style="background: rgba(227, 30, 36, 0.3); padding: 1.5rem; border-radius: 10px; border: 2px solid var(--primary-red);">
+                            <strong>Paschal Masha</strong><br>
+                            <small>Technical Manager</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROJECTS PAGE -->
+        <div id="projects" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">Previous Experience</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">The companies we have served are our hub of credibility. Here are some notable clients from the past 5 years.</p>
+
+                <div class="glass-card project-card">
+                    <span class="project-tag">Contract Mining - Ongoing</span>
+                    <h3>SAIL Group - Black Chrome Mine Operation</h3>
+                    
+                    <div class="grid-2" style="margin-top: 1.5rem;">
+                        <div>
+                            <p><strong>Client:</strong> SAIL Group</p>
+                            <p><strong>Location:</strong> Mooihoek Farm, Eastern Limb, Limpopo</p>
+                            <p><strong>Duration:</strong> 2018 - Present</p>
+                            <p><strong>Contract Type:</strong> Sub-Contract Mining</p>
+                        </div>
+                        <div>
+                            <p><strong>Reserve Size:</strong> 20,000,000 tonnes</p>
+                            <p><strong>Seams:</strong> LG6A and LG6B Chromite</p>
+                            <p><strong>Equipment Supplied:</strong> 8 machines on lease</p>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Project Scope</h4>
+                    <p>Montheri stepped in as a sub-contract miner on the project from 2018 where our contract required us to supply a total of eight machines on a lease basis.</p>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Equipment Deployed</h4>
+                    <ul class="styled-list">
+                        <li><strong>Two Excavators:</strong> 90-tonne capacity heavy-duty excavators</li>
+                        <li><strong>Four Dump Trucks:</strong> 45-tonne capacity dump trucks for material transport</li>
+                        <li><strong>One Dozer:</strong> Caterpillar D6R for site preparation and maintenance</li>
+                        <li><strong>One Water Cart:</strong> 18,000 litre capacity for dust suppression</li>
+                    </ul>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Environmental Commitment</h4>
+                    <p>We fulfill the demands of the contract with minimal impact on the environment and movement of wildlife. Our operations are designed to preserve the natural habitat while maintaining productivity.</p>
+
+                    <div class="quote-box" style="margin-top: 2rem;">
+                        "Successfully operating on a 20 million tonne chromite reserve with zero environmental incidents since 2018"
+                    </div>
+                </div>
+
+                <div class="glass-card project-card">
+                    <span class="project-tag">Plant Hire - Current</span>
+                    <h3>Annesley Andalusite Mine</h3>
+                    
+                    <div class="grid-2" style="margin-top: 1.5rem;">
+                        <div>
+                            <p><strong>Client:</strong> Annesley Mine Operations</p>
+                            <p><strong>Location:</strong> Burgersfort, Limpopo</p>
+                            <p><strong>Duration:</strong> 1-Year Contract (Renewable)</p>
+                        </div>
+                        <div>
+                            <p><strong>Contract Type:</strong> Plant Hire</p>
+                            <p><strong>Production Target:</strong> 30,000 tonnes/month</p>
+                            <p><strong>Mineral:</strong> Andalusite</p>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Project Overview</h4>
+                    <p>We have recently secured a 1-year sub-contract for a dozer Cat D6R2 at Annesley Andalusite Mine in Burgersfort, Limpopo. The mine is using various machinery and equipment on a 1 year lease to meet their output of 30,000 tonnes of Andalusite per month.</p>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Equipment Supplied</h4>
+                    <ul class="styled-list">
+                        <li><strong>Caterpillar D6R2 Dozer</strong> - Latest generation dozer for efficient material handling</li>
+                        <li>Full maintenance and operator support included</li>
+                        <li>24/7 technical backup available</li>
+                    </ul>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Our Commitment</h4>
+                    <p>We aim to maintain our commitment to source the best machinery which gives us the confidence that our client will be able to successfully reach their targets. Our equipment selection ensures maximum uptime and productivity.</p>
+                </div>
+
+                <div class="glass-card project-card">
+                    <span class="project-tag">Contract Mining - Completed</span>
+                    <h3>Natal Portland Cement - Limestone Extraction</h3>
+                    
+                    <div class="grid-2" style="margin-top: 1.5rem;">
+                        <div>
+                            <p><strong>Client:</strong> Natal Portland Cement (PPC)</p>
+                            <p><strong>Location:</strong> KwaZulu-Natal</p>
+                            <p><strong>Duration:</strong> 2016 - 2019 (3 Years)</p>
+                        </div>
+                        <div>
+                            <p><strong>Main Contractor:</strong> Unitrans</p>
+                            <p><strong>Production:</strong> 10,000 tonnes/month</p>
+                            <p><strong>Material:</strong> De-dolomitised Limestone</p>
+                        </div>
+                    </div>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Project Significance</h4>
+                    <p>Our first project and why we hold it dear to our hearts and as an integral part of our history is the Contract Mining project for Natal Portland Cement in KwaZulu Natal. This project established our reputation in the industry.</p>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Technical Challenges</h4>
+                    <p>In this project we were tasked with extracting 10,000 tonnes of de-dolomitised limestone monthly. We were working alongside the main contractor, Unitrans, where we were tasked with extracting this metamorphic rock which meant we had to work around the challenges that come with such rocks in the form of fault lines and imperfections in the formation.</p>
+
+                    <h4 style="color: var(--primary-red); margin: 2rem 0 1rem;">Key Achievements</h4>
+                    <ul class="styled-list">
+                        <li>Successfully completed 3-year contract with zero safety incidents</li>
+                        <li>Consistently met monthly production targets of 10,000 tonnes</li>
+                        <li>Overcame complex geological challenges with metamorphic rock formations</li>
+                        <li>Managed fault lines and formation imperfections effectively</li>
+                        <li>Established strong working relationship with Unitrans</li>
+                        <li>Built foundation for future contract mining opportunities</li>
+                    </ul>
+
+                    <div class="quote-box" style="margin-top: 2rem;">
+                        "This project was the foundation of our reputation - delivering excellence in challenging geological conditions from 2016 to 2019"
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Project Portfolio Summary</h3>
+                <div class="grid-3">
+                    <div class="stat-box">
+                        <span class="number">3</span>
+                        <span class="label">Major Projects</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">5+</span>
+                        <span class="label">Years Experience</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">100%</span>
+                        <span class="label">Project Success Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTACT PAGE -->
+        <div id="contact" class="page-content">
+            <div class="glass-container">
+                <h2 class="section-title">Contact Us</h2>
+                <p style="text-align: center; font-size: 1.2rem; margin-bottom: 3rem;">Get in touch with us to discuss your mining and commodity needs</p>
+
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        
+                        <h4 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">📞 Phone</h4>
+                        <p><a href="tel:0833317848">083 331 7848</a></p>
+
+                        <h4 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">✉️ Email</h4>
+                        <p><a href="mailto:info@montheri.com">info@montheri.com</a></p>
+                        <p><a href="mailto:sello.maripane@gmail.com">sello.maripane@gmail.com</a></p>
+
+                        <h4 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">🌐 Website</h4>
+                        <p><a href="http://www.montheri.com" target="_blank">www.montheri.com</a></p>
+
+                        <h4 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">📍 Physical Address</h4>
+                        <p>
+                            336KT Grootboom Farm<br>
+                            R555 Road<br>
+                            Steelpoort<br>
+                            Limpopo, 1133<br>
+                            South Africa
+                        </p>
+
+                        <h4 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">🏢 Company Details</h4>
+                        <p>
+                            <strong>Company Name:</strong> Montheri Trading (Pty) Ltd<br>
+                            <strong>Registration Number:</strong> 2015/443653/07<br>
+                            <strong>BBBEE Status:</strong> Level 1<br>
+                            <strong>Ownership:</strong> 100% Black Owned
+                        </p>
+
+                        <h4 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">🕒 Operating Hours</h4>
+                        <p>
+                            Monday - Friday: 08:00 - 17:00<br>
+                            Saturday: By Appointment<br>
+                            Sunday: Closed
+                        </p>
+                    </div>
+
+                    <div class="contact-form">
+                        <h3 style="color: white; margin-bottom: 1.5rem;">Send Us a Message</h3>
+                        <form onsubmit="event.preventDefault(); alert('Thank you for your message! We will get back to you soon.');">
+                            <input type="text" placeholder="Your Name *" required>
+                            <input type="email" placeholder="Your Email *" required>
+                            <input type="tel" placeholder="Your Phone Number">
+                            <input type="text" placeholder="Company Name">
+                            <select style="width: 100%; padding: 1rem; margin-bottom: 1rem; border: 1px solid var(--glass-border); border-radius: 10px; background: var(--glass-bg); backdrop-filter: blur(10px); color: white;">
+                                <option value="">Select Service Interest</option>
+                                <option>Contract Mining</option>
+                                <option>Mineral Processing</option>
+                                <option>Commodity Trading</option>
+                                <option>Plant Hire</option>
+                                <option>Transportation</option>
+                                <option>Equipment Procurement</option>
+                                <option>General Inquiry</option>
+                            </select>
+                            <textarea rows="6" placeholder="Your Message *" required></textarea>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-container">
+                <h3 class="section-subtitle">Service Areas</h3>
+                <div class="grid-2">
+                    <div class="glass-card">
+                        <h3>Primary Markets</h3>
+                        <ul class="styled-list">
+                            <li>South Africa (All Provinces)</li>
+                            <li>Limpopo Province (Head Office)</li>
+                            <li>Gauteng</li>
+                            <li>KwaZulu-Natal</li>
+                            <li>Mpumalanga</li>
+                        </ul>
+                    </div>
+                    <div class="glass-card">
+                        <h3>Regional Operations</h3>
+                        <ul class="styled-list">
+                            <li>Botswana</li>
+                            <li>Lesotho</li>
+                            <li>Zimbabwe</li>
+                            <li>Mozambique</li>
+                            <li>Namibia</li>
+                            <li>Eswatini (Swaziland)</li>
+                        </ul>
+                    </div>
+                </div>
+                <p style="text-align: center; margin-top: 2rem;">Through our network of industry-based relationships we are also able to take on projects in most parts of the African continent.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Montheri Trading (Pty) Ltd. All rights reserved.</p>
+        <p>Company Registration: 2015/443653/07 | 100% Black Owned | Level 1 BBBEE</p>
+        <p>Website designed and hosted by Webtank Solutions Est. 2021</p>
+        <p style="margin-top: 1rem;">
+            <a href="#" data-page="home" style="color: white; margin: 0 1rem;">Home</a> |
+            <a href="#" data-page="about" style="color: white; margin: 0 1rem;">About</a> |
+            <a href="#" data-page="services" style="color: white; margin: 0 1rem;">Services</a> |
+            <a href="#" data-page="contact" style="color: white; margin: 0 1rem;">Contact</a>
+        </p>
+    </footer>
+
+    <script>
+        // Page navigation
+        // Page navigation
+const navLinks = document.querySelectorAll('.nav-link, [data-page]');
+const pages = document.querySelectorAll('.page-content'); // ADD THIS LINE
+
+function showPage(pageName) {
+    pages.forEach(page => page.classList.remove('active')); // Now this will work
+            document.getElementById(pageName).classList.add('active');
+            
+            navLinks.forEach(link => link.classList.remove('active'));
+            document.querySelectorAll(`[data-page="${pageName}"]`).forEach(link => {
+                if (link.classList.contains('nav-link')) {
+                    link.classList.add('active');
+                }
+            });
+
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const page = link.getAttribute('data-page');
+                if (page) {
+                    showPage(page);
+                }
+            });
+        });
+
+        // Initialize first page
+        showPage('home');
+
+        // Mobile Menu Toggle Functionality
+function toggleMobileMenu() {
+    const menu = document.getElementById('mobile-menu');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    
+    menu.classList.toggle('active');
+    
+    // Animate hamburger icon
+    const spans = toggle.querySelectorAll('span');
+    if (menu.classList.contains('active')) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(7px, -6px)';
+    } else {
+        spans[0].style.transform = 'none';
+        spans[1].style.opacity = '1';
+        spans[2].style.transform = 'none';
+    }
+}
+
+// Close mobile menu when clicking on menu items
+document.addEventListener('DOMContentLoaded', function() {
+    const menuLinks = document.querySelectorAll('#mobile-menu a');
+    const menu = document.getElementById('mobile-menu');
+    const toggle = document.querySelector('.mobile-menu-toggle');
+    
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            menu.classList.remove('active');
+            
+            // Reset hamburger icon
+            const spans = toggle.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('nav') && menu.classList.contains('active')) {
+            menu.classList.remove('active');
+            
+            // Reset hamburger icon
+            const spans = toggle.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
+        }
+    });
+});
+
+    </script>
 </body>
 </html>
